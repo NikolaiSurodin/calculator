@@ -61,22 +61,22 @@ export default {
       }
     },
     plus() {
-      this.operator = (a, b) => a + b
+      this.operator = (earlyValue, currentValue) => earlyValue + currentValue
       this.earlyValue = this.currentValue
       this.clickOnOperator = true
     },
     minus() {
-      this.operator = (a, b) => a - b
+      this.operator = (earlyValue, currentValue) => earlyValue - currentValue
       this.earlyValue = this.currentValue
       this.clickOnOperator = true
     },
     multiply() {
-      this.operator = (a, b) => a * b
+      this.operator = (earlyValue, currentValue) => earlyValue * currentValue
       this.earlyValue = this.currentValue
       this.clickOnOperator = true
     },
     division() {
-      this.operator = (a, b) => (a / b).toFixed( 4 )
+      this.operator = (earlyValue, currentValue) => (earlyValue / currentValue).toFixed( 4 )
       this.earlyValue = this.currentValue
       this.clickOnOperator = true
     },
