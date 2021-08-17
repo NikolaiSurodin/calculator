@@ -76,7 +76,7 @@ export default {
       this.clickOnOperator = true
     },
     division() {
-      this.operator = (a, b) => (a / b).toFixed(4)
+      this.operator = (a, b) => (a / b).toFixed( 4 )
       this.earlyValue = this.currentValue
       this.clickOnOperator = true
     },
