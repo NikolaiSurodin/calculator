@@ -21,22 +21,17 @@
     <div class="button" @click="plus">+</div>
     <div class="button" @click="addNumber('0')">0</div>
     <div class="button" @click="point">.</div>
-
-    <div class="button result" @click="result">
-      <result-button/>
-    </div>
-
+    <div class="button result" @click="result">=</div>
   </div>
 </template>
 
 <script>
 
-import Field from "@/components/Field";
-import ResultButton from "@/components/ResultButton";
+import Field from "@/components/Field"
 
 export default {
   name: "calculator",
-  components: { ResultButton, Field },
+  components: { Field },
   data() {
     return {
       earlyValue: null,
